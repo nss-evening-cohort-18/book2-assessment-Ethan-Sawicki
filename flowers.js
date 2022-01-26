@@ -14,12 +14,7 @@ const flowers = [
 ]
 
 const addFlower = (flowerObject) => {
-    const lastIndex = flowers.length - 1
-    const currentLastFlower = flowers[lastIndex]
-    const maxId = currentLastFlower.id
-    const idForNewFlower = maxId + 1
-
-    flowerObject.id = idForNewFlower
+    flowerObject.id = flowers.length + 1
     flowers.push(flowerObject)
     
     
